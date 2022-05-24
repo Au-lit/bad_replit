@@ -5,20 +5,15 @@
 	--nav-selected-color: var(--fond-color);
 	/*--text-shodow-color: rgb(165, 193, 221);*/
 	--transition-duration: 1s;
-
 }
 
-@media (prefers-color-scheme: light) {
-	html {
-		filter: invert(1.0);
-	}
-}
+@media (prefers-color-scheme: light) { html { filter: invert(1.0); } }
 
 html {
 	box-sizing: border-box;
 	background-color: var(--fond-color);
 	color: var(--text-color);
-	font-family: 'Noto Sans JP', serif;
+	font-family: 'Noto Sans', serif;
 	text-align: center;
 }
 
@@ -54,8 +49,9 @@ code {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
+	width: 45%;
 	height: inherit;
+	text-shadow: black 1px 0 6px;
 }
 
 .current-page {
