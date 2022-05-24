@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible"
+		  content="IE=edge">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	<title>Bad Repl.it</title>
+	<link href="prism.css"
+		  rel="stylesheet" />
+	<script defer src="prism.js"></script>
+	<script defer type="module">
+		import { CodeJar } from 'https://medv.io/codejar/codejar.js';
+        //let jar = CodeJar(document.querySelector('.editor'), editor => Prism.highlightElement(editor, Prism.languages.scheme, 'scheme'));
+	</script>
+	<style>
+        .editor {
+            border-radius: 6px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            font-family: 'Source Code Pro', monospace;
+            font-size: 14px;
+            font-weight: 400;
+            height: 340px;
+            letter-spacing: normal;
+            line-height: 20px;
+            padding: 10px;
+            tab-size: 4;
+        }
+	</style>
+</head>
+<body>
+	<pre contenteditable="true" class="language-scheme"><code><br /></code></pre>
+	<canvas id="canvas" width="512" height="512"></canvas>
+	<div id="user_console"></div>
+	<script defer>
+		let ctx = document.querySelector("#canvas")
+			.getContext('2d');
+		var Module = {
+			onRuntimeInitialized: function () {
+				Module.run(`(draw-pixel 2 2 #u8(255 0 0))
+(draw-pixel 1 0 #u8(255 0 0))
+(draw-pixel 2 0 #u8(255 0 0))
+(draw-pixel 3 0 #u8(255 0 0))
+(draw-pixel 4 0 #u8(255 0 0))
+(draw-pixel 5 0 #u8(255 0 0))
+(draw-pixel 6 0 #u8(255 0 0))
+(draw-pixel 7 0 #u8(255 0 0))
+(draw-pixel 8 0 #u8(255 0 0))
+(draw-pixel 9 0 #u8(255 0 0))
+`); 
+			}
+		};
+	</script>
+	<script defer src="bind_shit.js"></script>
+</body>
+</html>
