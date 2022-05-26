@@ -7,9 +7,9 @@
 	--transition-duration: 1s;
 }
 
-@media (prefers-color-scheme: light) { body { filter: invert(1.0); } }
+@media (prefers-color-scheme: light) { html { filter: invert(1.0); } }
 
-body {
+html {
 	box-sizing: border-box;
 	background-color: var(--fond-color);
 	color: var(--text-color);
