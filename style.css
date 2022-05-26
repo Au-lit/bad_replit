@@ -7,9 +7,9 @@
 	--transition-duration: 1s;
 }
 
-@media (prefers-color-scheme: light) { html { filter: invert(1.0); } }
+@media (prefers-color-scheme: light) { body { filter: invert(1.0); } }
 
-html {
+body {
 	box-sizing: border-box;
 	background-color: var(--fond-color);
 	color: var(--text-color);
@@ -49,7 +49,7 @@ code {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 45%;
+	width: calc(50% - 32px);
 	height: inherit;
 	text-shadow: black 1px 0 6px;
 }

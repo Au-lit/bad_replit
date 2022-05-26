@@ -24,14 +24,14 @@
 	<link rel="stylesheet"
 		  href="style.css" />
 	<script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-	<script defer src="swup_var.js"></script>
+	<script defer src="script.js"></script>
 	<title>kinda not cool, ngl</title>
 </head>
-<body class="swup">
+<body class="swup" id="root-element">
 	<nav>
 		<a href="./index.html" class="transition-fade nav-button current-page">Pour Nico</a>
 		<a href="./code_editor.html"class="transition-fade nav-button">Pas Pour Nico</a>
-		<button onclick="">Change theme</button>
+		<button id="theme_changer">Change theme</button>
 	</nav>
 	<main class="transition-fade">
 		<i class="header" lang="fr">Pour <b>NOTRE</b> Kaiser Nicolas voici:</i>
